@@ -14,14 +14,14 @@ export function* signIn({ payload }) {
       username,
       password,
     })
-    const { access } = response.data
+    const { access, refresh } = response.data
 
     if (!access) {
       toast.error('User not allowed')
       return
     }
 
-    yield put(signInSucess(access, username))
+    yield put(signInSucess(access, refresh, username))
 
     history.push('/panel')
   } catch (err) {

@@ -11,7 +11,7 @@ function Header() {
       <Content>
         <nav>
           <img src={logo} alt="tecnica" height="50px" width="200px" />
-          <Link to="/">Painel</Link>
+          <Link to="/panel">Painel</Link>
         </nav>
 
         <aside>

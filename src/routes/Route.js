@@ -23,7 +23,7 @@ export default function RouteWrapper({
   }
 
   const Layout = signed ? DefaultLayout : AuthLayout
-
+  console.log(Component)
   return (
     <Route
       {...rest}
